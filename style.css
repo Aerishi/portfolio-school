@@ -15,17 +15,17 @@
 
 @font-face {
   font-family: primaryFont-Regular;
-  src: url(/src/fonts/Poppins-Regular.ttf);
+  src: url(./src/fonts/Poppins-Regular.ttf);
 }
 
 @font-face {
   font-family: primaryFont-Bold;
-  src: url(/src/fonts/Poppins-Bold.ttf);
+  src: url(./src/fonts/Poppins-Bold.ttf);
 }
 
 @font-face {
   font-family: accentFont;
-  src: url(/src/fonts/Always.otf);
+  src: url(./src/fonts/Always.otf);
 }
 
 html {
