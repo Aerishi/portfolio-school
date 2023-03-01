@@ -1,0 +1,60 @@
+.introduction {
+    text-align: left;
+}
+
+h1 {
+    font-size: var(--fs-headline-mobile);
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+}
+
+h2 {
+    font-size: var(--fs-section-headline);
+    font-family: accentFont;
+    color: var(--clr-accent);
+    margin-bottom: 4rem;
+}
+
+.mockups {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 10rem;
+}
+
+.mockups img {
+    object-fit: contain;
+}
+
+.mockups img {
+    max-width: 49%;
+}
+
+@media (max-width: 70em) {
+    .mockups img {
+        max-width: 100%;
+    }
+
+    .introduction h1 {
+        text-align: center;
+    }
+}
+
+h3 {
+    font-size: var(--fs-section-headline-small);
+    margin-bottom: 2rem;
+    font-family: primaryFont-Bold;
+}
+
+.intro-text>p {
+    margin-bottom: 2rem;
+}
+
+.git {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    color: var(--clr-text);
+    text-decoration: none;
+}

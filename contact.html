@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio // Vanessa </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+    <script src="./scripts/main.js" defer></script>
+
+</head>
+
+<body>
+    <header class="primary-header">
+        <div class="container flex">
+            <a href="index.html" class="logo">Vanessa Sachse</a>
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                <img src="./src/images/menu_FILL0_wght400_GRAD0_opsz48.svg" alt="" aria-hidden="true"
+                    class="icon-hamburger">
+                <img src="./src/images/close_FILL0_wght400_GRAD0_opsz48.svg" alt="" aria-hidden="true"
+                    class="icon-close">
+                <span class="visually-hidden">Menü</span></button>
+            <nav class="primary-navigation" id="primary-navigation">
+                <ul role="list" class="nav-list">
+                    <li><a href="about.html">Über mich</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li class="active"><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container form">
+            <div class="form-image">
+                <img src="./src/images/undraw_messaging_fun_re_vic9.svg" alt="">
+            </div>
+            <div class="intro-text formular">
+                <h1>
+                    Lass etwas Liebe da!
+                </h1>
+                <p>z.B in Form einer Anfrage, eines guten Memes oder Katzenbildern!</p>
+                <form action="#">
+                    <div class="colums">
+                        <div class="item">
+                            <label for="Name">Name <span>*</span></label>
+                            <input id="Name" type="text" name="Name" required />
+                        </div>
+                        <div class="item">
+                            <label for="mail">E-Mail <span>*</span></label>
+                            <input id="mail" type="email" name="mail" required />
+                        </div>
+                        <div class="item">
+                            <label for="Nachricht">Nachricht <span>*</span></label>
+                            <textarea name="Nachricht" id="Nachricht" cols="80" rows="5" required
+                                placeholder="Sag hi!"></textarea>
+                        </div>
+
+                        <div class="btn-block">
+                            <button type="submit">Absenden</button>
+                        </div>
+
+                </form>
+
+            </div>
+            <span class="required"> * Required</span>
+        </div>
+    </main>
+    <footer>
+        <nav class="footer-nav">
+            <div class="container">
+                <div class="columns">
+                    <div>
+                        <a href="#">Vanessa Sachse</a>
+                    </div>
+                    <div>
+                        <ul class="website-links" aria-label="Footer" role="list">
+                            <li><a href="about.html">Über mich</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="contact.html">Kontakt</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="socials" aria-label="Social Links Footer" role="list">
+                            <li><a href="https://www.github.com/Aerishi"><img src="./src/images/github-mark-white.png"
+                                        alt="Github Logo"></a></li>
+                            <li><a href="https://www.github.com/Aerishi"><img
+                                        src="./src/images/Instagram_Glyph_White.png" alt="Instagram logo"></a>
+                            </li>
+                            <li><a href="https://www.linkedin.com/in/vsachse/"><img
+                                        src="./src/images/linkedin-white.png" alt="LinkedIn Logo"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </footer>
+
+</body>
+
+</html>
