@@ -5,7 +5,7 @@
 h1 {
     font-size: var(--fs-headline-mobile);
     margin-top: 7rem;
-    margin-bottom: 7rem;
+    margin-bottom: 5 rem;
 }
 
 h2 {
@@ -15,23 +15,23 @@ h2 {
     margin-bottom: 4rem;
 }
 
-.mockups {
+.image-container {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
     margin-bottom: 10rem;
 }
 
-.mockups img {
+.image-container img {
     object-fit: contain;
 }
 
-.mockups img {
+.image-container a {
     max-width: 49%;
 }
 
 @media (max-width: 70em) {
-    .mockups img {
+    .image-container a {
         max-width: 100%;
     }
 
@@ -57,4 +57,15 @@ h3 {
     margin-bottom: 2rem;
     color: var(--clr-text);
     text-decoration: none;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translate(0, 10vh);
+    transition: all 1s;
+}
+
+.is-visible {
+    opacity: 1;
+    transform: translate(0, 0);
 }

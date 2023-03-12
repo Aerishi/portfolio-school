@@ -6,16 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio // Vanessa </title>
+    <link rel="stylesheet" href="lightbox.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="portfolio.css">
-    <script src="./scripts/main.js" defer></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="./scripts/fade-in-on-scroll.js" defer></script>
+    <script src="./scripts/navigation.js" defer></script>
+    <script src="./scripts/lightbox.js" defer></script>
+    <!--http://lokeshdhakar.com/projects/lightbox2/-->
 </head>
 
 <body>
     <header class="primary-header">
         <div class="container flex">
-            <a href="#" class="logo">Vanessa Sachse</a>
+            <a href="index.html" class="logo">Vanessa Sachse</a>
             <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
                 <img src="./src/images/menu_FILL0_wght400_GRAD0_opsz48.svg" alt="" aria-hidden="true"
                     class="icon-hamburger">
@@ -54,11 +58,19 @@
                     </p>
                     <a class="git" href="https://github.com/Aerishi/Wichteln" target="_blank"><img
                             src="./src/images/github.png" width="40px" alt=""> Source Code</a>
-                    <div class="mockups">
-                        <img src="./src/images/Wichteln_form.jpg" alt="mockup-wichteln">
-                        <img src="./src/images/Wichteln_info.jpg" alt="mockup-wichteln">
-                        <img src="./src/images/Wichteln_mailsent.jpg" alt="mockup-wichteln">
-                        <img src="./src/images/Wichteln_error.jpg" alt="mockup-wichteln">
+                    <div class="image-container">
+                        <a href="./src/images/Wichteln_form.jpg" data-lightbox="wichteln"
+                            data-title="Anmeldeformular"><img src="./src/images/Wichteln_form.jpg"
+                                alt="mockup-wichteln"></a>
+                        <a href="./src/images/Wichteln_info.jpg" data-lightbox="wichteln"
+                            data-title="Anzeige der Informationen"><img class="fade-in"
+                                src="./src/images/Wichteln_info.jpg" alt="mockup-wichteln"></a>
+                        <a href="./src/images/Wichteln_mailsent.jpg" data-lightbox="wichteln"
+                            data-title="Anzeige, wenn Trackingsnummer versandt wurde"><img class="fade-in"
+                                src="./src/images/Wichteln_mailsent.jpg" alt="mockup-wichteln"></a>
+                        <a href="./src/images/Wichteln_error.jpg" data-lightbox="wichteln"
+                            data-title="Erroranzeige, wenn man schon angemeldet ist"><img class="fade-in"
+                                src="./src/images/Wichteln_error.jpg" alt="mockup-wichteln"></a>
                     </div>
                     <h3>Maximiles Christmas</h3>
                     <p>Mockup für die jährliche Weihnachtsaktion auf Maximiles. Zuvor gesammelte Punkte können hier
@@ -66,19 +78,26 @@
                         Ich war für das Design und Mockup zuständig, umgesetzt wurde es von einem Kollegen. Erstellt mit
                         Adobe Photoshop.
                     </p>
-                    <div class="mockups">
-                        <img src="./src/images/christmaspage.jpg" alt="mockup-weihnachtsseite">
-                        <img src="./src/images/christmaspage2.jpg" alt="mockup-weihnachtsseite">
+                    <div class="image-container">
+                        <a href="./src/images/christmaspage.jpg" data-lightbox="Christmaspage" data-title="Oben"><img
+                                class="fade-in" src="./src/images/christmaspage.jpg" alt="mockup-weihnachtsseite"></a>
+                        <a href="./src/images/christmaspage2.jpg" data-lightbox="Christmaspage" data-title="unten"><img
+                                class="fade-in" src="./src/images/christmaspage2.jpg" alt="mockup-weihnachtsseite"></a>
                     </div>
                     <h2>Zeichnungen</h2>
                     <p>Ein paar meiner Zeichnungen. :) Alle digital mit Clip Studio Paint erstellt.
                     </p>
-                    <div class="mockups">
-                        <img src="./src/images/bild1.jpg" alt="Zeichnung Fee">
+                    <div class="image-container">
+                        <a href="./src/images/bild1.jpg" data-lightbox="Zeichnungen"><img class="fade-in"
+                                src="./src/images/bild1.jpg" alt="Zeichnung Fee"></a>
 
-                        <img src="./src/images/bild2.jpg" alt="Zeichnung Stern"><img src="./src/images/bild4.jpg"
-                            alt="">
-                        <img src="./src/images/bild3.jpg" alt="Zeichnung Katzen">
+                        <a href="./src/images/bild2.jpg" data-lightbox="Zeichnungen"><img class="fade-in"
+                                src="./src/images/bild2.jpg" alt="Zeichnung Stern"></a>
+                        <a href="./src/images/bild4.jpg" data-lightbox="Zeichnungen" data-title="Sticker 1">
+                            <img class="fade-in" src="./src/images/bild4.jpg" alt="Zeichnung Katze">
+                        </a>
+                        <a href="./src/images/bild3.jpg" data-lightbox="Zeichnungen" data-title="Sticker 2"><img
+                                class="fade-in" src="./src/images/bild3.jpg" alt="Zeichnung Katzen"></a>
 
                     </div>
                     <h2>Fotografie</h2>
@@ -86,12 +105,16 @@
                         Alpha
                         6000.
                     </p>
-                    <div class="mockups">
-                        <img src="./src/images/katze1.jpg" alt="Foto Katze">
+                    <div class="image-container">
+                        <a href="./src/images/katze1.jpg" data-lightbox="Fotografien" data-title="Shiro"><img
+                                class="fade-in" src="./src/images/katze1.jpg" alt="Foto Katze"></a>
 
-                        <img src="./src/images/Katze2.jpg" alt="Foto Katze">
-                        <img src="./src/images/Katze3.jpg" alt="Foto Katze">
-                        <img src="./src/images/Zug.jpg" alt="Foto Katze">
+                        <a href="./src/images/Katze2.jpg" data-lightbox="Fotografien" data-title="Shiro"><img
+                                class="fade-in" src="./src/images/Katze2.jpg" alt="Foto Katze"></a>
+                        <a href="./src/images/Katze3.jpg" data-lightbox="Fotografien" data-title="Bounty"><img
+                                class="fade-in" src="./src/images/Katze3.jpg" alt="Foto Katze"></a>
+                        <a href="./src/images/Zug.jpg" data-lightbox="Fotografien" data-title="Shiro"><img
+                                class="fade-in" src="./src/images/Zug.jpg" alt="Foto Katze"></a>
 
                     </div>
                 </div>
