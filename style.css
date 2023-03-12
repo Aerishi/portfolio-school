@@ -198,7 +198,10 @@ footer img {
   gap: 6rem;
   margin-bottom: 9rem;
 }
-
+a>img {
+  opacity: 1;
+  transition: 0.4s;
+}
 a>img:hover {
   opacity: 70%;
 }
